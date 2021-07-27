@@ -7,3 +7,6 @@
 
 게시판 글 작성 페이지 insert
 <center><img src="https://user-images.githubusercontent.com/86187456/127122643-a8ddc5a0-0146-4864-98b2-21e6b357ba29.gif" width="450" height="650"></center>
+
+인스타그램 모방 게시판
+<center><img src="https://user-images.githubusercontent.com/86187456/127122855-57cbfc90-003a-40b7-8da0-5a5145b8dabb.gif" width="450" height="650"></center>
