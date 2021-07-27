@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/board_border"
+    android:layout_height="100dp"
+    android:focusable="true"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/BoardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginRight="238dp"
+        android:text="첫번째 게시글"
+        android:fontFamily="@font/cafe"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boardeye" />
+
+    <TextView
+        android:id="@+id/Boardtext01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginRight="234dp"
+        android:text="문장문장문장문장문장"
+        android:fontFamily="@font/cafe"
+        android:textSize="12sp"
+        android:textColor="@color/board_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/BoardTitle" />
+
+    <TextView
+        android:id="@+id/BoardText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/cafe"
+        android:text="07/15"
+        android:textColor="@color/board_description"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/Boardtext01" />
+
+    <TextView
+        android:id="@+id/BoardText03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:text="admin"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cafe"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BoardText02"
+        app:layout_constraintTop_toBottomOf="@+id/Boardtext01" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/boardmessage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boardmessenger" />
+
+    <TextView
+        android:id="@+id/boardmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/cafe"
+        android:text="0"
+        android:textColor="@color/board_messagecounter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/boardText10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/boardeye" />
+
+    <TextView
+        android:id="@+id/boardText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/cafe"
+        android:text="1"
+        android:textColor="@color/board_countertext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
